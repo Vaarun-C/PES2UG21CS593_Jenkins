@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Compiling the CPP file'
-                    sh 'g++ -o output PES21CS593.cpp'
+                    sh 'g++ -o output PES2UG21CS593.cpp'
                 }
             }
         }
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     echo 'The output of the CPP file is: '
-                    sh './output'
+                    sh './out'
                 }
             }
         }
